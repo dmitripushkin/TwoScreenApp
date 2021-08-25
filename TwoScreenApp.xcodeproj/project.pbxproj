@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BF8A830B26D6766D00DE5F4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A830A26D6766D00DE5F4C /* AppDelegate.swift */; };
 		BF8A830D26D6766D00DE5F4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A830C26D6766D00DE5F4C /* SceneDelegate.swift */; };
-		BF8A830F26D6766D00DE5F4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A830E26D6766D00DE5F4C /* ViewController.swift */; };
+		BF8A830F26D6766D00DE5F4C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A830E26D6766D00DE5F4C /* LogInViewController.swift */; };
 		BF8A831226D6766D00DE5F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8A831026D6766D00DE5F4C /* Main.storyboard */; };
 		BF8A831426D6766E00DE5F4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8A831326D6766E00DE5F4C /* Assets.xcassets */; };
 		BF8A831726D6766E00DE5F4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8A831526D6766E00DE5F4C /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		BF8A830726D6766D00DE5F4C /* TwoScreenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoScreenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8A830A26D6766D00DE5F4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF8A830C26D6766D00DE5F4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF8A830E26D6766D00DE5F4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF8A830E26D6766D00DE5F4C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		BF8A831126D6766D00DE5F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8A831326D6766E00DE5F4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8A831626D6766E00DE5F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				BF8A830A26D6766D00DE5F4C /* AppDelegate.swift */,
 				BF8A830C26D6766D00DE5F4C /* SceneDelegate.swift */,
-				BF8A830E26D6766D00DE5F4C /* ViewController.swift */,
+				BF8A830E26D6766D00DE5F4C /* LogInViewController.swift */,
 				BF8A831026D6766D00DE5F4C /* Main.storyboard */,
 				BF8A831326D6766E00DE5F4C /* Assets.xcassets */,
 				BF8A831526D6766E00DE5F4C /* LaunchScreen.storyboard */,
@@ -102,7 +102,7 @@
 				};
 			};
 			buildConfigurationList = BF8A830226D6766D00DE5F4C /* Build configuration list for PBXProject "TwoScreenApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF8A830F26D6766D00DE5F4C /* ViewController.swift in Sources */,
+				BF8A830F26D6766D00DE5F4C /* LogInViewController.swift in Sources */,
 				BF8A830B26D6766D00DE5F4C /* AppDelegate.swift in Sources */,
 				BF8A830D26D6766D00DE5F4C /* SceneDelegate.swift in Sources */,
 			);
