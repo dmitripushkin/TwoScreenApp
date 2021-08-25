@@ -17,13 +17,17 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let  welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.userNameLabel.text = userNameTF.text
+    }
+    
     @IBAction func logInButtonPressed() {
-        if userNameTF.text == "Lex" && passwordTF.text == "12345"{
+        if userNameTF.text == "Lex" && passwordTF.text == "12345" {
             return
         } else {
             wrongPassOrUserNameAlert(with: "Oopsy !!!", and: "username or password is incorrect")
