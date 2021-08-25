@@ -8,22 +8,35 @@
 import UIKit
 
 class LogInViewController: UIViewController {
+    
+    @IBOutlet weak var userNameTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    
+    @IBOutlet weak var logInButton: UIButton!
+    
+    @IBOutlet weak var forgotUserNameButton: UIButton!
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    @IBAction func logInButtonPressed() {
+    }
+    @IBAction func forgotUNAlert() {
+    }
+    @IBAction func forgotPassAlert() {
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// MARK: - Private Methods
+extension LogInViewController {
+    private func showAlert(with title: String, and massege: String) {
+        let alert = UIAlertController(title: title, message: massege, preferredStyle: .alert)
+        present(alert, animated: true)
     }
-    */
-
+    
 }
