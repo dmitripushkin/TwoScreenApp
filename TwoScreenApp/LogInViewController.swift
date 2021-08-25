@@ -23,9 +23,9 @@ class LogInViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let  welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userNameLabel.text = userNameTF.text
+        welcomeVC.userName = "Hey, \(userNameTF.text ?? "Потрачено")!"
     }
-    
+     
     @IBAction func logInButtonPressed() {
         if userNameTF.text == "Lex" && passwordTF.text == "12345" {
             return
@@ -40,9 +40,12 @@ class LogInViewController: UIViewController {
     
     @IBAction func forgotPassAlert() {
         showPromptAlert(with: "Oopsy !!!", and: "The password is 12345")
-        
     }
     
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userNameTF.text = ""
+        passwordTF.text = ""
+    }
     
 }
 
