@@ -1,5 +1,5 @@
 //
-//  LogInViewController.swift
+//  WelcomeViewController.swift
 //  TwoScreenApp
 //
 //  Created by Повелитель on 25.08.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
