@@ -88,7 +88,6 @@
                     <connections>
                         <outlet property="forgotPasswordButton" destination="RBo-uZ-bc4" id="GFg-vA-u2e"/>
                         <outlet property="forgotUserNameButton" destination="uQG-hJ-WtS" id="msH-6M-VR0"/>
-                        <outlet property="logInButton" destination="nU0-qS-HA9" id="byA-9c-bLX"/>
                         <outlet property="passwordTF" destination="Sr7-um-jYX" id="fmI-yC-6ID"/>
                         <outlet property="userNameTF" destination="qpT-c2-RZh" id="spM-GR-9fq"/>
                     </connections>

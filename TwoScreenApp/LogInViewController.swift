@@ -12,20 +12,9 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    @IBOutlet weak var logInButton: UIButton! // не уверен нужен ли этот аутлет, точнее не понимаю
-    
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let  welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = "Hey, \(userNameTF.text ?? "Потрачено")!"
-    }
-     
     @IBAction func logInButtonPressed() {
         if userNameTF.text == "Lex" && passwordTF.text == "12345" {
             return
@@ -41,12 +30,17 @@ class LogInViewController: UIViewController {
     @IBAction func forgotPassAlert() {
         showPromptAlert(with: "Oopsy !!!", and: "The password is 12345")
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let  welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.userName = "Hey, \(userNameTF.text ?? "Потрачено")!"
+    }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         userNameTF.text = ""
         passwordTF.text = ""
     }
-    
+
 }
 
 // MARK: - Private Methods
